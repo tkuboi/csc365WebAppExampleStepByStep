@@ -1,4 +1,4 @@
-# Create a data source. Use JSP as the view for our application.
+# STEP 3: Create a data source. Use JSP as the view for our application.
 1. Let's create a context for our database connection. copy context.xml to /src/main/webapp/META-INF/.
 2. open the context.xml and edit and add necessary information, such as host url, dbname, user, password, to establish connection to the databases.
 3. open the web.xml in /src/main/webapp/WEB-INF/ or copy the web.xml included in this directory.
