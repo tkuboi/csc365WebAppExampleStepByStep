@@ -1,6 +1,6 @@
 1. open the pom.xml
 2. In order to use MySQL JDBC driver, copy and paste the following text in the pom.xml
-` <properties>
+``` <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
@@ -42,7 +42,8 @@
         </plugin>
       </plugins>
     </pluginManagement>
-  </build>`
+  </build>
+  ```
 
 3. update the project: let Maven get all the dependencies.
 4. open web.xml in webapp/WEB-INF
