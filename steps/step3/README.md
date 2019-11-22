@@ -1,15 +1,15 @@
 1. copy context.xml to /src/main/webapp/META-INF/.
 2. open the context.xml and edit and add necessary information, such as host url, dbname, user, password, to establish connection to the databases.
 3. open the web.xml in /src/main/webapp/WEB-INF/
-4. replace the <web-app> tag with the following tag. 
-```<web-app  xmlns="http://java.sun.com/xml/ns/javaee"
+4. replace the \<web-app\> tag with the following tag. 
+```\<web-app  xmlns="http://java.sun.com/xml/ns/javaee"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
          version="2.5">
          ```
 5. copy the following text and paste it in the file.
 ```
-  <resource-ref>
+  \<resource-ref\>
       <description>DB Connection</description>
       <res-ref-name>jdbc/dbname</res-ref-name>
       <res-type>javax.sql.DataSource</res-type>
