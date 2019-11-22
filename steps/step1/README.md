@@ -17,11 +17,11 @@
                 - WEB-INF
                     - web.xml
                 - index.jsp
-
-8. build the project
-9. Edit Run Configuration
+8. copy the build section over to your pom.xml from the web.xml included in this direcotry.
+9. build the project
+10. Edit Run Configuration
     - create a Maven configuration
-    - set the command line: `clean compile war:war tomcat7:run`
-10. run the app
-11. on your web browser, go to http://localhost:8080/{app_name}
-12. you should be able to see `Hello World!`
+    - set the command line: ```clean compile war:war tomcat7:run```
+11. run the app
+12. on your web browser, go to http://localhost:8080/{app_name}
+13. you should be able to see `Hello World!`
