@@ -1,4 +1,4 @@
-package edu.calpoly.csc365.login;
+package edu.calpoly.csc365.example1;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

@@ -1,9 +1,9 @@
-package edu.calpoly.csc365.login.controller;
+package edu.calpoly.csc365.example1.controller;
 
-import edu.calpoly.csc365.login.dao.Dao;
-import edu.calpoly.csc365.login.dao.DaoManager;
-import edu.calpoly.csc365.login.dao.DaoManagerFactory;
-import edu.calpoly.csc365.login.entity.Customer;
+import edu.calpoly.csc365.example1.dao.Dao;
+import edu.calpoly.csc365.example1.dao.DaoManager;
+import edu.calpoly.csc365.example1.dao.DaoManagerFactory;
+import edu.calpoly.csc365.example1.entity.Customer;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

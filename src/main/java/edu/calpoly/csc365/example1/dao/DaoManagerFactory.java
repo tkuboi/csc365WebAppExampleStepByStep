@@ -9,7 +9,8 @@ public class DaoManagerFactory {
   public static DaoManager createDaoManager() throws NamingException {
     Context initContext = new InitialContext();
     Context envContext  = (Context)initContext.lookup("java:comp/env");
-    DataSource ds = (DataSource)envContext.lookup("jdbc/tkuboi");
+    // change the jdbc/dbname to the resource name you registered in webapp/META-INF/context.xml
+    DataSource ds = (DataSource)envContext.lookup("jdbc/dbname");
     return new DaoManager(ds);
   }
 }

@@ -1,7 +1,7 @@
-package edu.calpoly.csc365.login.service;
+package edu.calpoly.csc365.example1.service;
 
-import edu.calpoly.csc365.login.dao.UserDao;
-import edu.calpoly.csc365.login.dao.UserDaoImpl;
+import edu.calpoly.csc365.example1.dao.UserDao;
+import edu.calpoly.csc365.example1.dao.UserDaoImpl;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -36,7 +36,7 @@ public class AuthenticationService {
   public static Cookie createLoginCookie(String name) {
     // create cookie
     Cookie loginCookie = new Cookie("user", name);
-    //setting cookie to expiry in 30 mins
+    //setting cookie to expire in 5 mins
     loginCookie.setMaxAge(5*60);
     return loginCookie;
   }

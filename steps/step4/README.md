@@ -1,3 +1,4 @@
+# STEP 4: Create pages to POST data onto the server.
 1. Let's add pages to create and update a customer.
 2. copy CustomerEditServlet.java and CustomerCreateServlet.java included in this directory to /src/main/java/edu/calpoly/csc365/example1/controller/.
 3. copy customer_edit.jsp and customer_create.jsp included in this directory to /src/main/webapp/.

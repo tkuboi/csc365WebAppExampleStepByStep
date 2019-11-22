@@ -1,4 +1,4 @@
-# Step 1
+# Step 1: Hello World
 
 ## Create a Maven Project
 

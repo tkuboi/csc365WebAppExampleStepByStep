@@ -1,3 +1,4 @@
+#STEP 5: Secure our web app by adding a login page.
 1. Let's add a login page.
 2. copy login.jsp included in this directory to /src/main/webapp/.
 3. copy LoginServlet.java included in this directory to /src/main/java/edu/calpoly/csc365/example1/controller/.
