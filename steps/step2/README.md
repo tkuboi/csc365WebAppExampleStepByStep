@@ -1,7 +1,8 @@
 # Let's test if we can connect to our database using MySQL JDBC driver.
 1. open the pom.xml
 2. In order to use MySQL JDBC driver, copy and paste the following text in the pom.xml
-``` <properties>
+``` 
+  <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
