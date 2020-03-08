@@ -1,6 +1,6 @@
 package edu.calpoly.csc365.example1.dao;
 
-import edu.calpoly.csc365.login.example1.Customer;
+import edu.calpoly.csc365.example1.entity.Customer;
 
 import javax.sql.DataSource;
 import java.sql.Connection;

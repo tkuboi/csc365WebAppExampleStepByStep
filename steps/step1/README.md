@@ -10,6 +10,7 @@
 5. Type in GroupId. Ex. csc365
 6. Type in ArtifactId. Ex. example1
 7. After creating the project, you should have the following files and directory structures:
+```
     - pom.xml
     - src
         - main
@@ -17,6 +18,7 @@
                 - WEB-INF
                     - web.xml
                 - index.jsp
+```
 8. copy the build section over to your pom.xml from the web.xml included in this direcotry.
 9. build the project
 10. Edit Run Configuration

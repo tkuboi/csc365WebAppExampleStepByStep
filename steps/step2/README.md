@@ -1,4 +1,16 @@
 # STEP 2: Let's test if we can connect to our database using MySQL JDBC driver.
+0. You need to have the following Customer table in your database. If you do not have the table, create it. If you do but the table name, column names are different, you need to change the table name and column names in TestServlet.java at the following steps.
+```
+CREATE TABLE Customer (
+  id int NOT NULL AUTO_INCREMENT,
+  ssn char(11) DEFAULT NULL,
+  name varchar(50) DEFAULT NULL,
+  address varchar(255) DEFAULT NULL,
+  phone char(12) DEFAULT NULL,
+  PRIMARY KEY (id),
+  UNIQUE KEY ssn (ssn)
+)
+```
 1. open the pom.xml
 2. In order to use MySQL JDBC driver, copy and paste the following text in the pom.xml
 ``` 
@@ -47,14 +59,13 @@
   </build>
   ```
 
-3. update the project: let Maven get all the dependencies.
-4. open web.xml in webapp/WEB-INF
-
+3. update the project: let Maven import all the dependencies.
 4. under the directory src/main, create a directory java, if it does not exist.
 5. under src/main/java, create directories (packages), edu/calpoly/csc365/example1
 6. create a file TestServlet.java at src/main/java/edu/calpoly/csc365/example1
-7. copy and paste the content of TestServlet.java in this step2 directory.
-8. Build and run the project
-9. On your browser, go to http://localhost:8080/{app_name}/test
-10. You should be able to see data from the database
+7. copy and paste the content of TestServlet.java in this step2 directory. Change the table name and column names in the sql query if they do not match tables and columns in your databse. 
+8. In the TestServlet.java, change the dbname in JDBC_DB_URL. Set user and password in JDBC_USER and JDBC_PASS.
+9. Build and run the project
+10. On your browser, go to http://localhost:8080/{app_name}/test
+11. You should be able to see data from the database
 
