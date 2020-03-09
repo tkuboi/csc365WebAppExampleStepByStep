@@ -37,6 +37,7 @@
 
 ```
 The view is at /src/main/webapp/.
+
 11. in /src/main/java/edu/calpoly/csc365/example1/, create a package 'controller'.
 12. In the controller package, create a class CustomerServlet, which extends HttpServlet.
 You can copy CustomerServlet.java included in this directory to /src/main/java/edu/calpoly/csc365/example1/controller.
