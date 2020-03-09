@@ -24,15 +24,15 @@ b. Set the username and password for your database.
 
 6. edit and change the dbname in the res-ref-name tag to an appropriate dbname. 
 7. change the welcome-file from index to index.jsp
-8. in /src/main/java/edu/calpoly/csc365/example1/, create a package controller.
+8. in /src/main/java/edu/calpoly/csc365/example1/, create a package 'controller'.
 9. In the controller package, create a class CustomerServlet, which extends HttpServlet.
 You can copy CustomerServlet.java included in this directory to /src/main/java/edu/calpoly/csc365/example1/controller.
-10. in /src/main/java/edu/calpoly/csc365/example1/ create a package dao.
+10. in /src/main/java/edu/calpoly/csc365/example1/ create a package 'dao'.
 11. copy files in /src/main/java/edu/calpoly/csc365/example1/dao in this repo, to your /src/main/java/edu/calpoly/csc365/example1/dao directory.
 12. change the dbname in line 13 of /src/main/java/edu/calpoly/csc365/example1/dao/DaoManagerFactory.jsp
-13. in /src/main/java/edu/calpoly/csc365/example1/ create a package entity.
+13. in /src/main/java/edu/calpoly/csc365/example1/ create a package 'entity'.
 14. copy files in /src/main/java/edu/calpoly/csc365/example1/entity in this repo, to your /src/main/java/edu/calpoly/csc365/example1/entity directory.
-You might need to change attributes of the classes in the entity directory if they do no match the tables in your database.
+You might need to change table name and column names in sql included in CustomerDaoImpl.java if they do no match the tables in your database.
 15. create customer.jsp in /src/main/webapp/. You can copy customer.jsp included in this directory to your /src/main/webapp/ directory.
 16. open /src/main/webapp/index.jsp and add the following link to the customers page in the body after the ```<h2>Hello World!</h2>```.
 ```

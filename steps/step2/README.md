@@ -1,5 +1,5 @@
 # STEP 2: Let's test if we can connect to our database using MySQL JDBC driver.
-0. You need to have the following Customer table in your database. If you do not have the table, create it. If you do but the table name, column names are different, you need to change the table name and column names in TestServlet.java at the following steps.
+0. You need to have the following Customer table in your database. If you do not have the table, create it. If you do but the table name, column names are different, you need to change the table name and column names in the sql included in TestServlet.java.
 ```
 CREATE TABLE Customer (
   id int NOT NULL AUTO_INCREMENT,
