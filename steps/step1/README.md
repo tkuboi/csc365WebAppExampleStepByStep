@@ -19,11 +19,12 @@
                     - web.xml
                 - index.jsp
 ```
-8. copy the build section over to your pom.xml from the web.xml included in this direcotry.
+8. From the pox.xml included in this directory, copy the build section over to your pom.xml.
 9. build the project
 10. Edit Run Configuration
-    - create a Maven configuration
+    - create a Maven configuration by selecting Maven from the list of templates on the left side. 
     - set the command line: ```clean compile war:war tomcat7:run```
-11. run the app
+    - save the configuration by clicking 'apply' and then 'ok'.
+11. run the app using the configuration you have just created.
 12. on your web browser, go to http://localhost:8080/{app_name}
 13. you should be able to see `Hello World!`
