@@ -11,7 +11,7 @@ import java.sql.*;
 
 @WebServlet(name = "TestServlet", urlPatterns = "/test")
 public class TestServlet extends HttpServlet {
-  static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
+  static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
   static final String JDBC_DB_URL = "jdbc:mysql://csc365.toshikuboi.net:3306/dbname";
 
   // JDBC Database Credentials

@@ -45,11 +45,11 @@
 You can copy CustomerServlet.java included in this directory to /src/main/java/edu/calpoly/csc365/example1/controller.
 13. in /src/main/java/edu/calpoly/csc365/example1/ create a package 'dao'.
 14. copy files in /src/main/java/edu/calpoly/csc365/example1/dao in this repo, to your /src/main/java/edu/calpoly/csc365/example1/dao directory.
-15. change the dbname in line 13 of /src/main/java/edu/calpoly/csc365/example1/dao/DaoManagerFactory.jsp
+15. change the dbname in line 13 of /src/main/java/edu/calpoly/csc365/example1/dao/DaoManagerFactory.java
 16. in /src/main/java/edu/calpoly/csc365/example1/ create a package 'entity'.
 17. copy files in /src/main/java/edu/calpoly/csc365/example1/entity in this repo, to your /src/main/java/edu/calpoly/csc365/example1/entity directory.
 You might need to change table name and column names in sql included in CustomerDaoImpl.java if they do no match the tables in your database.
-18. create customer.jsp in /src/main/webapp/, or copy customer.jsp included in this directory to your /src/main/webapp/ directory.
+18. create customers.jsp in /src/main/webapp/, or copy customers.jsp included in this directory to your /src/main/webapp/ directory.
 19. open /src/main/webapp/index.jsp and add the following link to the customers page in the body after the ```<h2>Hello World!</h2>```.
 ```
 <p><a href="./customers">customers</a></p>
