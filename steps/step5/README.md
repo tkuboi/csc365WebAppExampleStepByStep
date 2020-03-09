@@ -21,5 +21,7 @@ CREATE TABLE Users (
 12. If you want to guard other pages, you need to employ the same scheme in doGet and doPost methods.
 13. To add logout functionality, copy LogoutServlet.java included in this directory to /src/main/java/edu/calpoly/csc365/example1/controller/.
 14. open your index.jsp, and add a link to ./logout in the body after the link to the login page.
-```<p><a href="./logout">logout</a></p>```
+```
+<p><a href="./logout">logout</a></p>
+```
 15. When a user logs out, the code in LogoutServlet.java sets the expiration of the cookie to 0, so that the cookie expires immediately.
