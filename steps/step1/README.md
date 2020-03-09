@@ -19,7 +19,7 @@
                     - web.xml
                 - index.jsp
 ```
-8. From the pox.xml included in this directory, copy the build section over to your pom.xml by replaing the existing build section.
+8. From the pox.xml included in this directory, copy the pluginManagement section in the build section over to the build section in your pom.xml by replaing the existing pluginManagement section.
 9. build the project
 10. Edit Run Configuration
     - create a Maven configuration by selecting Maven from the list of templates on the left side. 
