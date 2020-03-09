@@ -43,3 +43,5 @@ You might need to change table name and column names in sql included in Customer
 20. on your browser, go to http://localhost:8080/{app_name}/ and click the customers link.
 21. you should be able to see a page with customers.
 22. add the information from other columns of Customer table to the page.
+23. The edit and add links does not work at this stage. We are going to make the links work in step 4.
+
