@@ -1,11 +1,12 @@
 # STEP 6: add a command and a page to execute a transaction.
 1. copy TransactionServlet.java included in this directory to /src/main/java/edu/calpoly/csc365/example1/controller/.
-2. copy transaction.jsp included in this directory to /src/main/webapp/.
-3. Add a link to the transaction page in the body after the link to the customers page in index.jsp.
+2. copy TransactionDaoCommandImpl.java included in this directory to /src/main/java/edu/calpoly/csc365/example1/dao/.
+3. copy transaction.jsp included in this directory to /src/main/webapp/.
+4. Add a link to the transaction page in the body after the link to the customers page in index.jsp.
 ```
 <p><a href="./transaction">create a transaction</a></p>
 ```
-4. You need the following tables in your database. If the table of column names do not match, change the code in the classes in the dao and entity packages. The tables need to be populated with some data to sucessfully run this example.
+5. You need the following tables in your database. If the table of column names do not match, change the code in the classes in the dao and entity packages. The tables need to be populated with some data to sucessfully run this example.
 ```
 CREATE TABLE `CreditCard` (
   `card_number` int NOT NULL AUTO_INCREMENT,
@@ -54,9 +55,9 @@ CREATE TABLE `Payment` (
   CONSTRAINT `Payment_ibfk_1` FOREIGN KEY (`card_number`) REFERENCES `CreditCard` (`card_number`)
 );
 ```
-5. build and run the project.
-6. go to http://localhost:8080/{app_name}/transaction
-7. input customer id, card number, vendor id, date, and amount.
-8. click submit.
-9. If the transaction succeeds, a new tuple should be inserted to the Transaction table.
-10. You can add more SQL statements in the TransactionDaoImpl.java, and bundle multiple SQL statements as one transaction.
+6. build and run the project.
+7. go to http://localhost:8080/{app_name}/transaction
+8. input customer id, card number, vendor id, date, and amount.
+9. click submit.
+10. If the transaction succeeds, a new tuple should be inserted to the Transaction table.
+11. You can add more SQL statements in the TransactionDaoImpl.java, and bundle multiple SQL statements as one transaction.
