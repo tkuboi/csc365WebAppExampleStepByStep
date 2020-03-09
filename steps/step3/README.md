@@ -36,7 +36,9 @@
                 /entity
 
 ```
-The view is at /src/main/webapp/.
+- The model is classes in entity.
+- The view is JSPs in /src/main/webapp/.
+- The controller is servlets in controller.
 
 11. in /src/main/java/edu/calpoly/csc365/example1/, create a package 'controller'.
 12. In the controller package, create a class CustomerServlet, which extends HttpServlet.
