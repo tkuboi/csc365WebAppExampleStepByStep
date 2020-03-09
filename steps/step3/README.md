@@ -1,18 +1,19 @@
 # STEP 3: Create a data source. Use JSP as the view for our application.
-1. Let's create a context for our database connection. 
-copy context.xml to /src/main/webapp/META-INF/.
-2. open the context.xml and make the following edits to the Resource tag.
-a. Replace the dbname with your database name in the name and url strings.
-b. Set the username and password for your database.
-3. open the web.xml in /src/main/webapp/WEB-INF/ or copy the web.xml included in this directory.
-4. replace the ```<web-app>``` tag with the following tag. 
+1. Let's create a context for our database connection.
+2. Create a directory META-INF in /src/main/webapp/.
+3. Create a file, context.xml, in the META-INF and copy the content of the context.xml included in this directory.
+4. open the context.xml and make the following edits to the Resource tag.
+- Replace the dbname with your database name in the name and url strings.
+- Set the username and password for your database.
+5. open the web.xml in /src/main/webapp/WEB-INF/ or copy the web.xml included in this directory.
+6. replace the ```<web-app>``` tag with the following tag. 
 ```
 <web-app  xmlns="http://java.sun.com/xml/ns/javaee"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
          version="2.5">
 ```
-5. Let's register a resource reference for our database connection. copy the following text and paste it in the file.
+7. Let's register a resource reference for our database connection. copy the following text and paste it in the web.xml file.
 ```
   <resource-ref>
       <description>DB Connection</description>
@@ -22,23 +23,23 @@ b. Set the username and password for your database.
   </resource-ref>
 ```
 
-6. edit and change the dbname in the res-ref-name tag to an appropriate dbname. 
-7. change the welcome-file from index to index.jsp
-8. in /src/main/java/edu/calpoly/csc365/example1/, create a package 'controller'.
-9. In the controller package, create a class CustomerServlet, which extends HttpServlet.
+8. edit and change the dbname in the res-ref-name tag to an appropriate dbname. 
+9. copy and paste the entire <welcome-file-list> section in the web.xml 
+10. in /src/main/java/edu/calpoly/csc365/example1/, create a package 'controller'.
+11. In the controller package, create a class CustomerServlet, which extends HttpServlet.
 You can copy CustomerServlet.java included in this directory to /src/main/java/edu/calpoly/csc365/example1/controller.
-10. in /src/main/java/edu/calpoly/csc365/example1/ create a package 'dao'.
-11. copy files in /src/main/java/edu/calpoly/csc365/example1/dao in this repo, to your /src/main/java/edu/calpoly/csc365/example1/dao directory.
-12. change the dbname in line 13 of /src/main/java/edu/calpoly/csc365/example1/dao/DaoManagerFactory.jsp
-13. in /src/main/java/edu/calpoly/csc365/example1/ create a package 'entity'.
-14. copy files in /src/main/java/edu/calpoly/csc365/example1/entity in this repo, to your /src/main/java/edu/calpoly/csc365/example1/entity directory.
+12. in /src/main/java/edu/calpoly/csc365/example1/ create a package 'dao'.
+13. copy files in /src/main/java/edu/calpoly/csc365/example1/dao in this repo, to your /src/main/java/edu/calpoly/csc365/example1/dao directory.
+14. change the dbname in line 13 of /src/main/java/edu/calpoly/csc365/example1/dao/DaoManagerFactory.jsp
+15. in /src/main/java/edu/calpoly/csc365/example1/ create a package 'entity'.
+16. copy files in /src/main/java/edu/calpoly/csc365/example1/entity in this repo, to your /src/main/java/edu/calpoly/csc365/example1/entity directory.
 You might need to change table name and column names in sql included in CustomerDaoImpl.java if they do no match the tables in your database.
-15. create customer.jsp in /src/main/webapp/. You can copy customer.jsp included in this directory to your /src/main/webapp/ directory.
-16. open /src/main/webapp/index.jsp and add the following link to the customers page in the body after the ```<h2>Hello World!</h2>```.
+17. create customer.jsp in /src/main/webapp/, or copy customer.jsp included in this directory to your /src/main/webapp/ directory.
+18. open /src/main/webapp/index.jsp and add the following link to the customers page in the body after the ```<h2>Hello World!</h2>```.
 ```
 <p><a href="./customers">customers</a></p>
 ```
-17. build and run the project
-18. on your browser, go to http://localhost:8080/{app_name}/ and click the customers link.
-19. you should be able to see a page with customers.
-20. add the information from other columns of Customer table to the page.
+19. build and run the project
+20. on your browser, go to http://localhost:8080/{app_name}/ and click the customers link.
+21. you should be able to see a page with customers.
+22. add the information from other columns of Customer table to the page.
